@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+    <script defer src="./product.js"></script>
+    <title>Products - Exclusive</title>
+</head>
+<body id="body" class="text-gray-900">
+
+    <nav class="w-full border-b border-gray-200">
+        <div class="flex gap-5 w-full justify-end px-4 border-b border-gray-200">
+            <a id="darkmodeBtn" class="px-3 py-1 bg-[#DB4444] text-white rounded-md my-2 cursor-pointer">Enable Darkmode</a>
+            <a href="./index.html" class="px-3 py-1 bg-black text-white rounded-md my-2 cursor-pointer">Login</a>
+        </div>
+        <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-[125px]">
+            <h1 id="siteTitle" class="text-xl font-bold text-black">Exclusive</h1>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <div id="searchWrapper" class="w-[245px] h-10 relative bg-gray-100 rounded-sm">
+                    <input id="searchInput" placeholder="What are you looking for?" class="w-full pl-5 h-full appearance-none placeholder:text-xs text-xs bg-transparent hover:bg-gray-50 cursor-pointer" type="text" />
+                    <img class="absolute size-5 right-3 top-2.5" src="./assets/icon/search.svg" alt="search"/>
+                </div>
+
+                <a id="basketBtn" href="./basket.html" target="_blank">
+                    <img class="w-6 h-6 cursor-pointer" src="./assets/icon/buy.svg" alt="buy" />
+                </a>
+
+                <img id="userBtn" class="w-6 h-6 cursor-pointer" src="./assets/icon/user.svg" alt="user" />
+            </div>
+
+            <img id="menuBtn" src="./assets/icon/menu.svg" alt="menu" class="block lg:hidden w-6 h-6 cursor-pointer">
+        </div>
+    </nav>
+
+    <section class="flex flex-col w-full sm:border-b pb-12 pt-6 px-5 sm:px-[175px] sm:py-16 border-gray-200 ">
+        <div class="mb-2 sm:mb-8 hidden sm:block">
+            <p class="text-[#DB4444] font-semibold flex items-center gap-2">
+            <img src="./assets/icon/Rectangle.svg" alt="Rectangle.svg"> 
+            Categories
+            </p>
+            <h2 id="categoriesTitle" class="text-3xl font-semibold text-black mt-3">Browse by Categories</h2>
+        </div>
+        <div id="categoriesContainer" class="flex gap-2"></div>
+    </section>
+
+    <section class="px-9 sm:px-[175px] py-4 sm:py-16">
+        <div class="mb-10">
+            <p class="text-[#DB4444] font-semibold flex items-center gap-2">
+            <img class="w-[10px] h-[20px]" src="./assets/icon/Rectangle.svg" alt="Rectangle.svg"> 
+            Our Products
+            </p>
+            <h2 id="productsTitle" class=" text-xl sm:text-3xl font-semibold text-black mt-2.5 sm:mt-3">Explore Our Products</h2>
+        </div>
+
+        <div id="homeContainer" class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8"></div>
+
+        <div id="viewMoreBtn" class="flex justify-center mt-12">
+            <button class="bg-[#DB4444] text-white px-8 py-3 rounded-sm font-medium hover:bg-[#b93838] transition-all cursor-pointer">View More</button>
+        </div>
+    </section>
+
+</body>
+</html>

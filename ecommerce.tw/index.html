@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+  <script defer src="./login.js"></script>
+  <title>Log in — Exclusive</title>
+</head>
+
+<body id="body" class="min-h-screen bg-white sm:bg-gray-300">
+
+  <button id="darkmodeBtn" class="hidden"></button>
+
+  <div class="min-h-screen md:p-16 lg:p-6">
+    <div class="sm:pb-32 lg:pb-none lg:max-w-6xl mx-auto bg-white sm:shadow-md overflow-hidden">
+      <div class="flex flex-col sm:grid sm:grid-cols-1 lg:grid-cols-2">
+
+        <div class="bg-white hidden sm:flex ">
+          <img
+            src="./assets/icon/telephone.svg"
+            alt="phone.svg"
+            class="w-full lg:w-[85%] h-auto"
+          />
+        </div>
+
+        <div class="px-[50px] pt-[64px] lg:py-24 flex items-start">
+          <div class="w-full lg:max-w-md">
+
+            <h1 class="text-2xl lg:text-4xl font-semibold mb-3">
+              Log in to Exclusive
+            </h1>
+
+            <p class="text-sm text-gray-600 mb-8">
+              Enter your details below
+            </p>
+
+            <form action="#" method="post" class="space-y-6">
+
+              <label class="block">
+                <input
+                  id="emailInput"
+                  type="email"
+                  name="email"
+                  class="mt-2 w-full sm:placeholder:text-[14px] md:placeholder:text-[14px] bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300"
+                  placeholder="Email"
+                />
+              </label>
+
+              <label class="block relative">
+                <input
+                  id="passwordInput"
+                  type="password"
+                  name="password"
+                  required
+                  class="mt-2 w-full bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300 pr-10"
+                  placeholder="Password"
+                />
+
+                <img
+                  id="eyeIcon"
+                  src="./assets/icon/eye.svg"
+                  alt="eye icon"
+                  class="absolute right-2 top-2 w-6 h-6 cursor-pointer"
+                />
+              </label>
+
+              <a
+                id="loginBtn"
+                class="block w-full bg-rose-600 hover:bg-rose-700 text-white font-medium py-3 rounded-md transition delay-10 duration-500 ease-in-out hover:scale-110 text-center cursor-pointer"
+                target="_blank"
+              >
+                Login
+              </a>
+
+              <button id="loginInput" class="hidden"></button>
+
+              <p class="text-sm text-gray-600 text-center sm:text-start">
+                Don't have an account?
+                <a
+                  id="register-link"
+                  href="./register.html"
+                  target="_blank"
+                  class="text-gray-800 underline ml-1 font-bold"
+                >
+                  Register
+                </a>
+              </p>
+
+              <div>
+                <input
+                  name="rememberMe"
+                  type="checkbox"
+                  id="rememberMe"
+                  class="cursor-pointer"
+                >
+                <label for="rememberMe" class="cursor-pointer">Remember me</label>
+              </div>
+
+              <input type="checkbox" id="RememberMe" class="hidden">
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

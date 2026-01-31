@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+  <script defer src="./register.js"></script>
+  <title>Create Account — Exclusive</title>
+</head>
+<body class="min-h-screen bg-white sm:bg-gray-300">
+  <div class="min-h-screen md:p-16 lg:p-6">
+    <div class="sm:pb-32 lg:pb-none lg:max-w-6xl mx-auto bg-white sm:shadow-md overflow-hidden">
+      <div class="flex flex-col sm:grid sm:grid-cols-1 lg:grid-cols-2">
+        <div class="bg-white hidden sm:flex ">
+          <img
+            src="./assets/icon/telephone.svg" alt="phone.svg"
+            class="w-full lg:w-[85%] h-auto"
+          />
+        </div>
+
+        <div class="px-8 py-12 lg:py-24 flex items-start">
+          <div class="w-full max-w-md">
+            <h1 class="text-3xl lg:text-4xl font-semibold tracking-wide mb-3">Create an account</h1>
+            <p class="text-sm text-gray-600 mb-8">Enter your details below</p>
+
+            <form action="#" method="post" class="space-y-6">
+              <label class="block">
+                <input
+                id="firstNameInput"
+                  type="text"
+                  name="first_name"
+                  required
+                  class="mt-2 w-full bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300"
+                  placeholder="First Name"
+                />
+              </label>
+
+              <label class="block">
+                <input
+                id="lastNameInput"
+                  type="text"
+                  name="last_name"
+                  required
+                  class="mt-2 w-full bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300"
+                  placeholder="Last Name"
+                />
+              </label>
+
+              <label class="block">
+                <input
+                id="emailInput"
+                  type="email"
+                  name="email"
+                  required
+                  class="mt-2 w-full bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300"
+                  placeholder="Email"
+                />
+              </label>
+
+              <label class="block">
+                <input
+                id="passwordInput"
+                  type="password"
+                  name="password"
+                  required
+                  class="mt-2 w-full bg-transparent border-b border-gray-300 focus:border-rose-600 focus:outline-none py-2 placeholder-gray-300"
+                  placeholder="Password"
+                />
+              </label>
+
+              <a
+              id="createAccountBtn"
+                class="block w-full bg-rose-600 hover:bg-rose-700 text-white font-medium py-3 rounded-md transition-shadow shadow-sm text-center" target="_blank"
+              >
+                Create Account
+              </a>
+
+              <p class="text-sm text-gray-600 text-center sm:text-start">
+                Already have account?
+                <a href="./index.html" id="login-link" target="_blank" class="text-gray-800 underline ml-1 font-bold">Log in</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
