@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="./blogdetails.js"></script>
+    <title>Blog details - MetaBlog</title>
+</head>
+<body class="bg-white duration-700" id="body">
+  <nav class="w-full border-b border-gray-200">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-8">
+        <a target="_blank" href="./index.html"> 
+            <img src="./assets/icons/Logo.svg" alt="logo" class="h-8">
+        </a>
+
+      <div class="flex items-center gap-8">
+        <a href="./index.html" class="text-gray-700 hover:text-black">Home</a>
+        <a href="./newblog.html" class="text-gray-700 hover:text-black">Write a Blog</a>
+        <a href="#" class="text-gray-700 hover:text-black">My Blogs</a>
+        <a href="#" class="text-gray-700 hover:text-black">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="relative w-[166px] h-10 bg-gray-100 rounded-sm">
+          <input
+            type="text"
+            placeholder="Search"
+            class="w-full h-full pl-5 pr-8 text-xs bg-transparent placeholder:text-xs focus:outline-none"
+          />
+          <img
+            src="./assets/icons/search.svg"
+            alt="search"
+            class="absolute size-5 right-3 top-2.5"
+          />
+        </div>
+
+        <button class="w-14 h-8 bg-gray-200 rounded-full flex items-center p-1 transition-colors duration-700 cursor-pointer justify-start" id="darkmodeBtn">
+          <div id="darkThumb" class="w-6 h-6 bg-white rounded-full shadow flex justify-center items-center transform transition-transform duration-500 ease-in-out">
+            <img class="w-[14px]" src="./assets/icons/sunny.svg" alt="theme">
+          </div>
+        </button>
+
+        <a href="./login.html" class="bg-black text-white px-6 py-1 rounded-lg shadow-lg hover:bg-[#1e2030] transition cursor-pointer">
+          Sign In
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-6  text-gray-700 leading-relaxed">
+
+        <div class="inline-block mb-4">
+            <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-md">
+            Technology
+            </span>
+        </div>
+
+        <h1 class="text-2xl md:text-3xl font-semibold text-black mb-2">
+            The Impact of Technology on the Workplace: How Technology is Changing
+        </h1>
+
+        <div class="flex items-center gap-2 text-sm text-gray-500 mb-6">
+            <a target="_blank" href="./author.html" class="hover:text-black">
+                <span>Tracey Wilson</span>
+            </a>
+            <span>•</span>
+            <span>August 20, 2022</span>
+        </div>
+
+        <div class="mb-8">
+            <img class="w-full rounded-lg object-cover">
+        </div>
+
+        <p class="mb-4">
+        </p>
+
+        <p class="mb-4">
+        </p>
+
+        <h2 class="text-lg font-semibold text-black mt-6 mb-2">Research Your Destination</h2>
+        <p class="mb-4">
+        </p>
+
+    </main>
+
+    <footer class="text-gray-700 py-10">
+        <div class="container mx-auto px-6 md:px-20 lg:px-40">
+        <div class="flex flex-col md:flex-row justify-between gap-10">
+            
+            <div class="max-w-[350px]">
+            <h3 class="text-xl font-semibold mb-4">About</h3>
+            <p class="text-gray-500 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <p><span class="font-semibold">Email :</span> info@jstemplate.net</p>
+            <p><span class="font-semibold">Phone :</span> 880 123 456 789</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-16 md:text-right">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Link</h3>
+                <div class="flex flex-col space-y-2 text-gray-500">
+                <a href="#" class="hover:text-black">Home</a>
+                <a href="#" class="hover:text-black">Write a Blog</a>
+                <a href="#" class="hover:text-black">My Blogs</a>
+                <a href="#" class="hover:text-black">Contact</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Category</h3>
+                <div class="flex flex-col space-y-2 text-gray-500">
+                <a href="#" class="hover:text-black">Lifestyle</a>
+                <a href="#" class="hover:text-black">Technology</a>
+                <a href="#" class="hover:text-black">Travel</a>
+                <a href="#" class="hover:text-black">Business</a>
+                <a href="#" class="hover:text-black">Economy</a>
+                <a href="#" class="hover:text-black">Sports</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <hr class="my-8 border-gray-200" />
+
+        <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <div class="flex flex-col items-center md:items-start">
+            <a href="./index.html">
+                <img src="./assets/icons/Logo.svg" alt="logo" class="h-8 mb-2">
+            </a>
+            <p>© JS Template 2023. All Rights Reserved.</p>
+            </div>
+
+            <div class="flex gap-6 mt-4 md:mt-0">
+            <a href="#" class="hover:text-black">Terms of Use</a>
+            <a href="#" class="hover:text-black">Privacy Policy</a>
+            <a href="#" class="hover:text-black">Cookie Policy</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
